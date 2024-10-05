@@ -1,0 +1,300 @@
+/* ⚠️⚠️I am working here⚠️⚠️ */
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+#discount-banner {
+    background-color: #FABC3F;
+    height: 60px;
+    text-align: center;
+    background-image: url(./staff/discount-text.png);
+    background-size: 32%;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: changing-banner 2s infinite;
+    animation-timing-function: cubic-bezier(1,0.000001,0.000001,1);
+    box-shadow: 3px 5px 7px rgb(147, 147, 150);
+    border-radius: 5px;
+}
+
+@keyframes changing-banner {
+    from {background-image: url(./staff/discount-text.png);}
+    to {background-image: url(./staff/discount-little-text.png);}
+}
+
+#header {
+    position: relative;
+    background-image: url("./staff/Untitled\ design\ \(17\).png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 10px;
+    height: 300px;
+    transition: background-image 2s;
+    top: 0;
+    box-shadow: 7px 10px 13px rgb(93, 93, 95);
+    border-radius: 5px;
+}
+
+#head-bar {
+    display: flex;
+    padding-left: 8px;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+#above-logo {
+    font-weight: 800;
+    font-size: 2.5vw;
+    color: white;
+    text-shadow: 7px 7px 7px rgb(93, 93, 95);
+}
+
+#above-logo:hover {
+    background-image: linear-gradient(to right,#FABC3F,#821131);
+    background-clip: text;
+    color: transparent;
+    transition-duration: 1s;
+}
+
+#header-search {
+    flex-grow: 3;
+    margin-top: 5px;
+    width: 300px;
+    height: 25px;
+    border-radius: 4px;
+    border: white solid 2px;
+    box-shadow: 7px 7px 7px rgba(93, 93, 95, 0.7);
+}
+
+#header-search:hover {
+    border:#821131 solid 2px;
+}
+
+#header-search-button {
+    height: 31px;
+    border-radius: 4px;
+    border: white solid 2px;
+    box-shadow: 7px 7px 7px rgba(93, 93, 95, 0.7);
+}
+
+#header-search-button:hover {
+    background-color: rgba(130, 17, 49, 0.8);
+}
+
+#signup-in {
+    position: absolute;
+    top: 6%;
+    left: 87%;
+    padding: 7px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 7px 7px 7px rgba(93, 93, 95, 0.7);
+}
+
+#signup-in a {
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+}
+
+#signup-in:hover {
+    background-color: #E85C0D;
+}
+
+#signup-in:hover a {
+    color: white;
+}
+
+#header-nav {
+    position: absolute;
+    top: 81%;
+    right: 1.5%;
+}
+
+#header-nav button {
+    padding: 10px;
+    margin-left: 6px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 7px 7px 7px rgba(93, 93, 95, 0.7);
+}
+
+#header-nav button:hover {
+    background-color: transparent;
+    color: white;
+    border: white dashed 2px;
+}
+
+#header-nav button:hover .header-nav-a {
+    color: white;
+}
+
+.header-nav-a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#main-content {
+    margin-top: 70px;
+}
+
+#big-plate {
+    height: 500px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./staff/food-plate.png);
+    background-size: cover;
+    box-shadow: 15px 15px 20px rgb(114, 114, 116);
+    border-radius: 50%;
+}
+
+#big-plate-hover {
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 2s;
+}
+
+#big-plate:hover #big-plate-hover {
+    height: 0;
+    top: 0;
+}
+
+#three-plates {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+#three-plates > div {
+    text-align: center;
+}
+
+.three-plates-h2 {
+    text-shadow: 5px 5px 6px #821131;
+    color: #821131;
+    font-weight: 900;
+}
+
+#menus {
+    display: flex;
+    justify-content: space-around;
+}
+
+#menus > div {
+    padding: 100px;
+    border-left: rgb(180, 180, 184) solid 2px;
+    border-top: rgb(180, 180, 184) solid 2px;
+    border-right: rgb(180, 180, 184) solid 1px;
+    border-bottom: rgb(180, 180, 184) solid 1px;
+    border-top-left-radius: 10px;
+    box-shadow: 13px 13px 10px rgb(180, 180, 184);
+    font-weight: 700;
+}
+
+#menu-1 {
+    background-image: url(./staff/cherry-blossom.png);
+    background-repeat: no-repeat;
+}
+
+#menu-2 {
+    background-image: url(./staff/bahar-nareng-3.png.png);
+    background-repeat: no-repeat;
+}
+
+#menu-3 {
+    background-image: url(./staff/Untitled\ design\ \(14\).png);
+    background-repeat: no-repeat;
+}
+
+.menu-submit {
+    padding: 5px;
+    width: 80px;
+    height: 30px;
+    margin-top: 27px;
+    box-shadow: 3px 3px 10px rgb(82, 80, 81);
+    background-color:  rgb(205, 205, 209);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.menu-submit:hover {
+    width: 83px;
+    height: 34px;
+    
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-image: url(./staff/footer-background.jpg);
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 7px 10px rgb(93, 93, 95);
+}
+
+#footer-first-div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-top: 10px;
+    width: 30%;
+}
+
+#bottom-logo {
+    font-weight: 800;
+    font-size: 2.5vw;
+    color: white;
+    text-shadow: 4px 4px 4px rgb(141, 141, 141);
+}
+
+.about-contact-us {
+    margin-top: 12px;
+}
+
+.about-contact-us:hover {
+    background-image: linear-gradient(to right, #E85C0D, #FABC3F);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.footer-f-div-a {
+    color: white;
+    font-weight: 600;
+    text-shadow: 4px 4px 4px rgb(156, 156, 156);
+    text-decoration: none;
+}
+
+#footer-second-div {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 10%;
+    justify-content: space-between;
+}
+
+#footer-second-div > div {
+background-color: white;
+padding: 4px 5px;
+border-radius: 5px;
+box-shadow: 2px 2px 4px rgb(156, 156, 156);
+}
+
+#footer-second-div > div:hover {
+    background-color: #FABC3F;
+}
+
+footer p {
+    position: absolute;
+    top: 80%;
+    padding-left: 8px;
+    color: white;
+}
