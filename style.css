@@ -30,8 +30,6 @@ body {
     width: 100%;
     margin-top: 10px;
     height: 300px;
-    transition: background-image 2s;
-    top: 0;
     box-shadow: 7px 10px 13px rgb(93, 93, 95);
     border-radius: 5px;
 }
