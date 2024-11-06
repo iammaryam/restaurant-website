@@ -27,3 +27,4 @@ function searched () {
         document.querySelector("#three-plates").style.display = "none";
     }
 }
+
