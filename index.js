@@ -28,3 +28,21 @@ function searched () {
     }
 }
 
+
+function checked () {
+    
+    ourList = document.forms['first-menu'].getElementsByClassName("menu-input");
+    checkedList = [];
+    for (x in ourList) {
+        if (ourList[x].checked) {
+            checkedList.push(ourList[x].name);
+        } else {
+            continue
+        }
+    }
+
+    return checkedList;
+}
+
+debugger;
+listOfChoosenFoods = document.getElementById("first-menu").addEventListener("submit", checked);
