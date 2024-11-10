@@ -1,3 +1,4 @@
+/* ⚠️⚠️I am working here⚠️⚠️ */
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -294,4 +295,21 @@ footer p {
     top: 80%;
     padding-left: 8px;
     color: white;
+}
+
+.menu-verified {
+    padding: 25px;
+    border: 1px solid;
+    box-shadow: 2px 2px 10px;
+    color: rgb(35, 141, 35);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+    font-family: "Lora", serif;
+    font-weight: 900;
+    font-size: 25px;
+    font-style: normal;
 }
