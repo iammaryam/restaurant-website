@@ -1,32 +1,30 @@
+function displayNone(addList) {
+    var selectorList = [];
+    selectorList.push.apply(selectorList, addList)
+    for (x in selectorList) {
+        document.querySelector(selectorList[x]).style.display = "none";
+    }
+}
 
 function searched () {
     const usersInput = document.getElementById("header-search").value;
-    
     if (usersInput == "food" || usersInput == "menu" || usersInput == "salad" || usersInput=="drink"
         || usersInput == "order"
     ) {
-        document.querySelector("header").style.display = "none";
-        document.querySelector("#big-plate").style.display = "none";
-        document.querySelector("footer").style.display = "none";
+        displayNone(["#big-plate", "footer", "header"])
     } else if (usersInput == "footer" || usersInput == "about" || usersInput == "contact" || usersInput=="youtube"
         || usersInput == "instagram" || usersInput == "facebook" || usersInput == "linkedin" || usersInput == "copyright"
     ) {
-        document.querySelector("header").style.display = "none";
-        document.querySelector("#big-plate").style.display = "none";
-        document.querySelector("#three-plates").style.display = "none";
-        document.querySelector("#menus").style.display = "none"; 
+        displayNone(["#big-plate", "header", "#menus", "#three-plates"]) 
     } else if (usersInput == "plate" || usersInput == "tray") {
-        document.querySelector("header").style.display = "none";
-        document.querySelector("footer").style.display = "none";
-        document.querySelector("#menus").style.display = "none";
-        document.querySelector("#three-plates").style.display = "none";
+        displayNone(["header", "footer", "#menus", "#three-plates"])
     } else if (usersInput == "signup" || usersInput == "login" || usersInput == "discount" || usersInput == "shopping") {
-        document.querySelector("#big-plate").style.display = "none";
-        document.querySelector("footer").style.display = "none";
-        document.querySelector("#menus").style.display = "none";
-        document.querySelector("#three-plates").style.display = "none";
+        displayNone(["#big-plate", "footer", "#menus", "#three-plates"])
     }
 }
+
+
+
 
 
 
@@ -48,48 +46,55 @@ function checked () {
 
     document.getElementById("first-menu-button").onclick = function () {
         ourList = document.forms['first-menu'].getElementsByClassName("menu-input");
-        checkedList = [];
+        checkedList1 = [];
         for (x in ourList) {
             if (ourList[x].checked) {
-                checkedList.push(ourList[x].name);
+                checkedList1.push(ourList[x].name);
             } else {
                 continue
             }
         }
-        verified.innerText = "Your order containing " + checkedList + " has been successfully placed."
+        verified.innerText = "Your order containing : " + checkedList1 + ", has been successfully placed."
         +"\nAnd it will be sent to your address within half an hour.";
         verified.style.display = "block";
+        document.getElementById("main-content").style.display = "none";
+        document.querySelector("header").style.display = "none";
+        document.querySelector("footer").style.display = "none";
     }
-
 
     document.getElementById("second-menu-button").onclick = function () {
-        ourList = document.forms['first-menu'].getElementsByClassName("menu-input");
-        checkedList = [];
+        ourList = document.forms['second-menu'].getElementsByClassName("menu-input");
+        checkedList2 = [];
         for (x in ourList) {
             if (ourList[x].checked) {
-                checkedList.push(ourList[x].name);
+                checkedList2.push(ourList[x].name);
             } else {
                 continue
             }
         }
-        verified.innerText = "Your order containing " + checkedList + " has been successfully placed."
+        verified.innerText = "Your order containing : " + checkedList2 + ", has been successfully placed."
         +"\nAnd it will be sent to your address within half an hour.";
         verified.style.display = "block";
+        document.getElementById("main-content").style.display = "none";
+        document.querySelector("header").style.display = "none";
+        document.querySelector("footer").style.display = "none";
     }
 
-
     document.getElementById("third-menu-button").onclick = function () {
-        ourList = document.forms['first-menu'].getElementsByClassName("menu-input");
-        checkedList = [];
+        ourList = document.forms['third-menu'].getElementsByClassName("menu-input");
+        checkedList3 = [];
         for (x in ourList) {
             if (ourList[x].checked) {
-                checkedList.push(ourList[x].name);
+                checkedList3.push(ourList[x].name);
             } else {
                 continue
             }
         }
-        verified.innerText = "Your order containing " + checkedList + " has been successfully placed."
+        verified.innerText = "Your order containing : " + checkedList3 + ", has been successfully placed."
         +"\nAnd it will be sent to your address within half an hour.";
         verified.style.display = "block";
+        document.getElementById("main-content").style.display = "none";
+        document.querySelector("header").style.display = "none";
+        document.querySelector("footer").style.display = "none";
     }
 }
