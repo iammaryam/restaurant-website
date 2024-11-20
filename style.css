@@ -313,3 +313,86 @@ footer p {
     font-size: 25px;
     font-style: normal;
 }
+
+
+/*
+signin-up page style
+*/
+
+body.signin-up {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+body.signin-up > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid gray;
+    padding: 30px;
+    box-shadow: 2px 3px 16px;
+}
+
+body.signin-up h2 {
+    font-weight: 900;
+    text-align: center;
+}
+
+body.signin-up #logsign-flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+body.signin-up .logsign-item {
+    padding:10px 35px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+body.signin-up #flex-first {
+    background-image: linear-gradient(to right, #821131, #FABC3F);
+    color: white;
+}
+
+body.signin-up > div input {
+    border: 1px solid rgba(163, 158, 158, 0.5);
+    margin-top: 20px;
+    padding: 13px;
+    display: block;
+}
+
+body.signin-up #only-signup {
+    display: none;
+}
+
+body.signin-up #forgot-pass {
+    color: #E85C0D;
+    font-size: 0.7em;
+    font-weight: 500;
+}
+
+body.signin-up #login-button {
+    display: block;
+    padding: 8px 7em;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #FABC3F, #821131);
+    border: none;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+body.signin-up #not-member {
+    font-size: 0.7em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+}
+
+body.signin-up #not-member > span {
+    color: #E85C0D;
+}

@@ -50,3 +50,14 @@ function searched () {
     document.querySelector("header").style.display = "none";
     document.querySelector("footer").style.display = "none";
 }
+
+function signupClicked() {
+    document.getElementById("flex-second").style.backgroundImage = "linear-gradient(to right, #821131, #FABC3F)";
+    document.getElementById("flex-second").style.color = "white";
+    document.getElementById("flex-first").style.backgroundImage = "None";
+    document.getElementById("flex-first").style.color = "black";
+    document.getElementById("only-signup").style.display = "block";
+    document.getElementById("forgot-pass").style.display = "none";
+    document.getElementById("login-button").innerText = "Signup";
+    document.getElementById("not-member").style.display = "none";
+}
