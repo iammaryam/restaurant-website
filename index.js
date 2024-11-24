@@ -1,4 +1,5 @@
-debugger;
+/*main page codes*/
+
 document.getElementById("header-search").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         event.preventDefault();
@@ -31,7 +32,6 @@ function searched () {
     }
 }
 
-
  function buttonClicked() {
     ourList = document.getElementsByClassName("menu-input");
     const checkedList = [];
@@ -51,13 +51,38 @@ function searched () {
     document.querySelector("footer").style.display = "none";
 }
 
+
+
+/*signin-up page codes*/
+
 function signupClicked() {
-    document.getElementById("flex-second").style.backgroundImage = "linear-gradient(to right, #821131, #FABC3F)";
-    document.getElementById("flex-second").style.color = "white";
-    document.getElementById("flex-first").style.backgroundImage = "None";
-    document.getElementById("flex-first").style.color = "black";
-    document.getElementById("only-signup").style.display = "block";
-    document.getElementById("forgot-pass").style.display = "none";
-    document.getElementById("login-button").innerText = "Signup";
-    document.getElementById("not-member").style.display = "none";
+    document.querySelector("body.signin-up #flex-second").style.backgroundImage = "linear-gradient(to right, #821131, #FABC3F)";
+    document.querySelector("body.signin-up #flex-second").style.color = "white";
+    document.querySelector("body.signin-up #flex-first").style.backgroundImage = "None";
+    document.querySelector("body.signin-up #flex-first").style.color = "black";
+    document.querySelector("body.signin-up #only-signup").style.display = "block";
+    document.querySelector("body.signin-up #forgot-pass").style.display = "none";
+    document.querySelector("body.signin-up #login-button").innerText = "Signup";
+    document.querySelector("body.signin-up #not-member").style.display = "none";
+}
+
+
+function loginClicked() {
+    document.querySelector("body.signin-up #flex-second").style.backgroundImage = "None";
+    document.querySelector("body.signin-up #flex-second").style.color = "black";
+    document.querySelector("body.signin-up #flex-first").style.backgroundImage = "linear-gradient(to right, #821131, #FABC3F)";
+    document.querySelector("body.signin-up #flex-first").style.color = "white";
+    document.querySelector("body.signin-up #only-signup").style.display = "None";
+    document.querySelector("body.signin-up #forgot-pass").style.display = "block";
+    document.querySelector("body.signin-up #login-button").innerText = "Login";
+    document.querySelector("body.signin-up #not-member").style.display = "block";
+}
+
+
+
+/*Q & A page codes*/
+
+function displayAnswer() {
+    document.querySelector("body.questions-page #first-item").classList.toggle("class-add-item");
+    document.querySelector("body.questions-page #first-item-paragraph").classList.toggle("item-paragraph");
 }

@@ -315,6 +315,7 @@ footer p {
 }
 
 
+
 /*
 signin-up page style
 */
@@ -395,4 +396,54 @@ body.signin-up #not-member {
 
 body.signin-up #not-member > span {
     color: #E85C0D;
+}
+
+
+
+/*
+Q & A page style
+*/
+
+body.questions-page {
+    background-image: url(./staff/background.jpg);
+    background-position: center;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+body.questions-page .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.questions-page .grid-item {
+    position: relative;
+    background-color: rgb(128, 22, 52, 0.9);
+    color: white;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+body.questions-page .item-button {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+    border-color: rgb(153, 151, 151);
+    font-weight: 700;
+    font-size: medium;
+}
+
+.class-add-item {
+    grid-row: 1/3;
+}
+
+body.questions-page .item-paragraph {
+    display: none;
+    color: #FABC3F;
 }
