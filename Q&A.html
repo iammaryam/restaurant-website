@@ -6,48 +6,51 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link href="./style.css" rel="stylesheet" />
     </head>
     <body class="questions-page">
+        <div class="head-of-second-page">
+            <a href="./index.html"><h3><i class="fa-solid fa-house"></i> HOME</h3></a>
+        </div>
+
         <div class="grid-container">
-            <div class="grid-item" id="first-item">Can we order different foods from different countries?<button type="button" class="item-button" onclick="displayAnswer()">+</button>
+            <div class="grid-item" id="first-item">Can we order different foods from different countries?<button type="button" id="first-item-button" class="item-button" onclick="displayAnswer('#first-item', '#first-item-paragraph', '#first-item-button')">+</button>
                 <p class="item-paragraph" id="first-item-paragraph" style="color: #FABC3F;">You can choose anything you want of all menus and then click on one of three submit buttons to order.</p>
             </div>
 
-            <div class="grid-item">Can we cancle our order after our order submitted?<button type="button" class="item-button">+</button>
-                <p class="item-paragraph">No, You cant. Please be sure before submit your order.</p>
+            <div class="grid-item" id="second-item">Can we cancle our order after our order submitted?<button type="button" id="second-item-button" class="item-button" onclick="displayAnswer('#second-item', '#second-item-paragraph', '#second-item-button')">+</button>
+                <p class="item-paragraph" id="second-item-paragraph" style="color: #FABC3F;">No, You cant. Please be sure before submit your order.</p>
             </div>
 
-            <div class="grid-item">Do all of foods taste same their tatse in their contry?<button type="button" class="item-button">+</button>
-                <p class="item-paragraph">We tried to cook delecius foods same thier main taste. But you will score our foods finally.</p>
+            <div class="grid-item" id="third-item">Do all of foods taste same their tatse in their contry?<button type="button" id="third-item-button" class="item-button" onclick="displayAnswer('#third-item', '#third-item-paragraph', '#third-item-button')">+</button>
+                <p class="item-paragraph" id="third-item-paragraph" style="color: #FABC3F;">We tried to cook delecius foods same thier main taste. But you will score our foods finally.</p>
             </div>
 
-            <div class="grid-item">How can we change our address while we are ordering?<button type="button" class="item-button">+</button>
-                <p class="item-paragraph">You cant change your address when you are ordering. You have to change your address before your order.</p>
+            <div class="grid-item" id="forth-item">How can we change our address while we are ordering?<button type="button" id="forth-item-button" class="item-button" onclick="displayAnswer('#forth-item', '#forth-item-paragraph', '#forth-item-button')">+</button>
+                <p class="item-paragraph" id="forth-item-paragraph" style="color: #FABC3F;">You cant change your address when you are ordering. You have to change your address before your order.</p>
             </div>
 
-            <div class="grid-item">Are all of foods fresh and for the ordering day?<button type="button" class="item-button">+</button>
-                <p class="item-paragraph">Yes. All of our foods are fresh and cooks daily. Our last day foods get homeless people in the city.</p>
+            <div class="grid-item" id="fifth-item">Are all of foods fresh and for the ordering day?<button type="button" id="fifth-item-button" class="item-button" onclick="displayAnswer('#fifth-item', '#fifth-item-paragraph', '#fifth-item-button')">+</button>
+                <p class="item-paragraph" id="fifth-item-paragraph" style="color: #FABC3F;">Yes. All of our foods are fresh and cooks daily. Our last day foods get homeless people in the city.</p>
             </div>
 
-            <div class="grid-item">How can we order two seperated orders in one order?<button type="button" class="item-button">+</button>
-                <p class="item-paragraph">You can choose anything you want from menu and then order all of them with you account.</p>
+            <div class="grid-item" id="sixth-item">How can we order two seperated orders in one order?<button type="button" id="sixth-item-button" class="item-button" onclick="displayAnswer('#sixth-item', '#sixth-item-paragraph', '#sixth-item-button')">+</button>
+                <p class="item-paragraph" id="sixth-item-paragraph" style="color: #FABC3F;">You can choose anything you want from menu and then order all of them with you account.</p>
             </div>
 
-            <div class="grid-item">How can we know our order submitted or not?<button type="button" class="item-button">+</button>
-                <p class="item-paragraph">when you submit your order, we send you a message that your order submitted and you will get that soon.</p>
+            <div class="grid-item" id="seventh-item">How can we know our order submitted or not?<button type="button" id="seventh-item-button" class="item-button" onclick="displayAnswer('#seventh-item', '#seventh-item-paragraph', '#seventh-item-button')">+</button>
+                <p class="item-paragraph" id="seventh-item-paragraph" style="color: #FABC3F;">when you submit your order, we send you a message that your order submitted and you will get that soon.</p>
             </div>
 
-            <div class="grid-item">Can we order from your instagram page?<button type="button" class="item-button">+</button>
-                <P class="item-paragraph">Not at all. we cant get orders from our instagram page.</P>
+            <div class="grid-item" id="eigth-item">Can we order from your instagram page?<button type="button" id="eigth-item-button" class="item-button" onclick="displayAnswer('#eigth-item', '#eigth-item-paragraph', '#eigth-item-button')">+</button>
+                <P class="item-paragraph" id="eigth-item-paragraph" style="color: #FABC3F;">Not at all. we cant get orders from our instagram page.</P>
             </div>
 
-            <div class="grid-item">Why we cant message you via Email?<button type="button" class="item-button">+</button>
-                <P class="item-paragraph">You can tell your messages from our contact page.</P>
+            <div class="grid-item" id="ninth-item">Why we cant message you via Email?<button type="button" id="ninth-item-button" class="item-button" onclick="displayAnswer('#ninth-item', '#ninth-item-paragraph', '#ninth-item-button')">+</button>
+                <P class="item-paragraph" id="ninth-item-paragraph" style="color: #FABC3F;">You can tell your messages from our contact page.</P>
             </div>
         </div>
-
-        <button type="button" id="pipi"></button>
 
         <script src="./index.js"></script>
     </body>
