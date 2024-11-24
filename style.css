@@ -315,6 +315,18 @@ footer p {
 }
 
 
+.head-of-second-page {
+    background-color: #FABC3F;
+    padding: 0.1em;
+    padding-left: 1em;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.head-of-second-page a {
+    text-decoration: none;
+    color: black;
+}
 
 /*
 signin-up page style
@@ -325,7 +337,7 @@ body.signin-up {
     font-style: normal;
 }
 
-body.signin-up > div {
+body.signin-up #main-of-signup {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -429,6 +441,10 @@ body.questions-page .grid-item {
     border-radius: 20px;
 }
 
+.class-add-item {
+    grid-row: 1/3;
+}
+
 body.questions-page .item-button {
     position: absolute;
     top: -5px;
@@ -439,8 +455,10 @@ body.questions-page .item-button {
     font-size: medium;
 }
 
-.class-add-item {
-    grid-row: 1/3;
+.minus-button {
+    background-image: url(./staff/minus.jpg);
+    background-position: center;
+    color:transparent;
 }
 
 body.questions-page .item-paragraph {

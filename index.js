@@ -83,6 +83,7 @@ function loginClicked() {
 /*Q & A page codes*/
 
 function displayAnswer() {
-    document.querySelector("body.questions-page #first-item").classList.toggle("class-add-item");
-    document.querySelector("body.questions-page #first-item-paragraph").classList.toggle("item-paragraph");
+        document.querySelector("body.questions-page #first-item").classList.toggle("class-add-item");
+        document.querySelector("body.questions-page #first-item-paragraph").classList.toggle("item-paragraph");
+        document.querySelector("body.questions-page .item-button").classList.toggle("minus-button");
 }
