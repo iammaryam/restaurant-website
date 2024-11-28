@@ -23,7 +23,7 @@
                 </div>
 
                 <div id="flex-second-item">
-                    <form action="./index.html">
+                    <form action="./message-sent.html" target="_blank">
                         <h1> Contact Form </h1>
 
                         <label for="full-name" class="three-lables">Full Name</label>
@@ -41,14 +41,19 @@
             </div>
 
             <div id="third-div">
-                <P><i class="fa-solid fa-location-dot" style="color: #821131;"></i> &nbsp Location</P>
-                <p><i class="fa-solid fa-phone" style="color: #821131;"></i> &nbsp Phone</p>
-                <P><i class="fa-solid fa-clock" style="color: #821131;"></i> &nbsp Hours</P>
+                <button onclick="contactWays('location')"><i class="fa-solid fa-location-dot" style="color: #821131;"></i> &nbsp Location</button>
+                <button onclick="contactWays('phone')"><i class="fa-solid fa-phone" style="color: #821131;"></i> &nbsp Phone</button>
+                <button onclick="contactWays('hours')"><i class="fa-solid fa-clock" style="color: #821131;"></i> &nbsp Hours</button>
             </div>
 
             <div id="forth-div">
                 <h1>foodi</h1>
             </div>
+
+            <div id="hidden-div"></div>
+
         </div>
+
+        <script src="./index.js"></script>
     </body>
 </html>

@@ -87,3 +87,18 @@ function displayAnswer(anItem, aParagraph, aButton) {
         document.querySelector("body.questions-page " + aParagraph).classList.toggle("item-paragraph");
         document.querySelector("body.questions-page " + aButton).classList.toggle("minus-button");
 }
+
+
+
+/*Contact us page codes*/
+
+function contactWays(way) {
+    document.querySelector("body.contact-page #hidden-div").style.display = "block";
+    if ( way === 'location') {
+        document.querySelector("body.contact-page #hidden-div").innerHTML = "<h3>Our current location:<br /><br /> UK, London, street 503, number 99</h3>";
+    }else if (way === 'phone') {
+        document.querySelector("body.contact-page #hidden-div").innerHTML = "<h3>Our current phone number:<br /><br /> +40 889 -----</h3>";
+    }else {
+        document.querySelector("body.contact-page #hidden-div").innerHTML = "<h3>Hours we are open:<br /><br /> 8 AM to 12 PM</h3>";
+    }
+}
