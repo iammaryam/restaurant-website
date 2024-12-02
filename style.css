@@ -874,11 +874,6 @@ body.contact-page #forth-div {
     opacity: 0.9;
     box-shadow: 2px 2px 10px #821131;
 }
-    height: 580px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    box-shadow: 4px 2px 15px rgb(97, 97, 97);
-}
 
 body.contact-page #flex-second-item {
     padding: 2em 10em 1em 4em;
@@ -942,21 +937,6 @@ body.contact-page #third-div > button {
     display: block;
     border: none;
     font-size: medium;
-}
-
-body.contact-page #hidden-div {
-    position: absolute;
-    top: 30%;
-    left: 35%;
-    width: 500px;
-    height: 300px;
-    background-image: linear-gradient(to right, gray, black);
-    opacity: 0.9;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    align-content: center;
-    display: none;
 }
 
 body.contact-page #forth-div {
@@ -1070,7 +1050,6 @@ body.contact-page #forth-div {
     
     body.contact-page #flex-second-item {
         padding: 1em 7em 1em 3em;
-        background-color: white;
     }
 
     body.contact-page #form-submit {
@@ -1097,7 +1076,6 @@ body.contact-page #forth-div {
         font-size: small;
     }
 
-    
     body.contact-page #hidden-div {
         top: 30%;
         left: 35%;
